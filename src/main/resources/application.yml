@@ -1,0 +1,17 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+server:
+  port: 7982
+
+spring:
+  application:
+    name: order-service
+
+order:
+  path: /test1
